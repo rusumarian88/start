@@ -1,0 +1,30 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+}
+
+.section{
+    padding: 60px 0;
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 45px;
+    @include latime;
+}
+
+.content.row{
+    flex-direction: row;
+}
+
+.content.rowReverse{
+    flex-direction: row-reverse;
+}

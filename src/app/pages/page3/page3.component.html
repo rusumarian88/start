@@ -1,0 +1,9 @@
+
+<app-section-with-title>
+    <app-subtit-tit-descp [centrat]="true" subtitle="PLANS" title="Our Services" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."></app-subtit-tit-descp>
+    <div class="prices">
+        <app-price-card *ngFor="let p of pricesServices.prices" [subtitle]="p.subtitle" [price]="p.price" [textSmall]="p.textSmall" [description]="p.description" [icons]="p.icons" [texts]="p.texts" [button]="p.button" class="price-card"></app-price-card>
+    </div>
+</app-section-with-title>
+
+

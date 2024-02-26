@@ -1,0 +1,7 @@
+
+<div [ngClass]="{centrat:centrat}" class="content">
+    <div *ngIf="subtitle" class="subtitle">{{subtitle}}</div>
+    <div class="title">{{title}}</div>
+    <div [ngClass]="{gray:gray}" class="description">{{description}}</div>
+    <div><ng-content></ng-content></div>
+</div>

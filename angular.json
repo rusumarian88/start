@@ -28,8 +28,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/scss/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/","src/scss/"]
+            },
             "scripts": []
           },
           "configurations": {
@@ -96,12 +99,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/scss/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/","src/scss/"]
+            },
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4af4f6a0-1b16-43ba-9b0c-d0f6e7e89627"
   }
 }

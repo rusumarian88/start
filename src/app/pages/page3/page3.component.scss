@@ -1,0 +1,29 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+    width: 100%;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: stretch;
+    gap:50px;
+    margin: 32px 0 75px;
+}
+
+.price-card{
+    width: calc(33.33% - (105px * 2) / 3);
+    min-width: 335px;
+}
+
+@media screen and (max-width:$max-width-break-point) {
+    .prices{
+        margin: 0;
+    }
+}

@@ -1,0 +1,40 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: inline-block;
+}
+
+
+.image-card{
+    width: 175px;
+    height: 175px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.name{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: rgba(33, 37, 41, 1);
+    margin: 16px 0;
+    font-family: 'Crimson Text',sans-serif;
+}
+
+.function{
+    font-size: 15px;
+    line-height: 19px;
+    font-weight: 400;
+    color: rgba(33, 37, 41, 0.75);
+}
+
+
+@media screen and (max-width:865px){
+    .people-card{
+        width: 280px;
+    }
+}

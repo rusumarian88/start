@@ -1,0 +1,81 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap:30px;
+    width: 100%;
+    margin: 22px 0 33px;
+}
+
+.form,.maps{
+    width: calc(50% - 15px);
+    min-width: 335px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+label{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 16px;
+}
+
+.name,.email{
+    font-size: 20px;
+    line-height: 22px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom:21px ;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background:rgba(238, 238, 238, 1);
+    cursor: pointer;
+}
+
+textarea{
+    font-size: 20px;
+    line-height: 24px;
+    border:1px solid rgba(0, 0, 0, 1) ;
+    border-radius: 5px;
+    margin-bottom: 21px;
+    word-wrap: normal;
+    resize: none;
+    background:rgba(238, 238, 238, 1);
+    cursor: pointer;
+}
+
+.maps{
+    min-height:335px;
+    min-width: 335px;
+    background-image: url("/assets/maps.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+@media screen and (max-width:740px) {
+    .maps,.form{
+        width: 100%;
+    }
+    .content{
+        margin: 0;
+    }
+}

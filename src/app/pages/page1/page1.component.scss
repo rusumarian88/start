@@ -1,0 +1,72 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+    width: 100%;
+}
+
+.partners{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap:40px;
+    padding-bottom: 16px;
+}
+
+.right,.left{
+    flex-grow: 1;
+    flex-basis: 1px;
+    min-width:339px ;
+}
+
+.section-c{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.image-section-b,.image-section-c{
+    width:100% ;
+    max-width: 600px;
+    margin: auto;
+}
+
+.btn{
+    margin-top: 25px;
+}
+
+@media screen and (max-width:$max-width-break-point) {
+    .right,.left{
+        width: 100%;
+    }
+}
+
+.people-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:35px;
+}
+
+.people-card{
+    padding: 20px 25px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    width: calc(25% - (35px * 3) / 4);
+    min-width: 252px;
+    &.people-card:hover{
+        background-color: rgb(190, 245, 190);
+    }
+}
+
+
+
+
+
+

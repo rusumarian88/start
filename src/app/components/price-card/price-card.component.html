@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="subtitle">{{subtitle}}</div>
+    <div class="title">
+        <div class="price">{{price}}</div>
+        <div class="text-small">{{textSmall}}</div>
+    </div>
+    <div class="description">{{description}}</div>
+    <div class="list">
+        <div class="icons">
+            <div *ngFor="let icon of icons" [ngStyle]="{'background-image':'url('+icon+')'}" class="icon"></div>
+        </div>
+        <div class="list-item">
+            <div *ngFor="let t of texts" class="text">{{t}}</div>
+        </div>
+    </div>
+    <app-button [button]="button"></app-button>
+</div>

@@ -1,0 +1,9 @@
+
+<app-section-with-title>
+    <app-subtit-tit-descp [centrat]="true" subtitle="WORKS" title="Portfolio" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."></app-subtit-tit-descp>
+    <div class="portfolios">
+        <img *ngFor="let p of portfolios" [src]="p" class="portfolio"> 
+    </div>
+    <app-button button="Learn More"></app-button>
+</app-section-with-title>
+

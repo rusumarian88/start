@@ -1,0 +1,33 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+    width: 100%;
+}
+
+.portfolios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap:55px;
+    margin: 40px 0 20px;
+}
+
+.portfolio{
+    width: calc(50% - 55px / 2);
+    min-width: 335px;
+}
+
+.bar-bottom{
+    margin-top: 40px;
+}
+
+@media screen and (max-width:$max-width-break-point) {
+    .portfolios,.bar-bottom{
+        margin: 0;
+    }
+}

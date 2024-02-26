@@ -1,0 +1,32 @@
+
+<app-heder></app-heder>
+<app-section-with-title class="section-a">
+    <app-subtit-tit-descp [centrat]="true" subtitle="PARTNERS" title="Lorem Ipsum Dolor" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."></app-subtit-tit-descp>
+    <div class="partners">
+        <img *ngFor="let i of partners" [src]="i" class="partner">
+    </div>
+    <app-button button="Learn More"></app-button>
+</app-section-with-title>
+<app-section-with-title isRow="row" class="section-b">
+    <img class="image-section-b" src="/assets/image-section-b.png">
+    <div class="right">
+        <app-subtit-tit-descp title="Lorem ipsum dolor sit amet consectetur " [gray]="true" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?">
+            <app-button button="Learn More" class="btn"></app-button>
+        </app-subtit-tit-descp>
+    </div>
+</app-section-with-title>
+<app-section-with-title isRow="rowReverse" class="section-c"> 
+    <img class="image-section-c" src="/assets/image-section-c.png">
+        <div class="left">
+            <app-subtit-tit-descp title="Lorem ipsum dolor sit amet consectetur " [gray]="true" description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?">
+                <app-button button="Learn More" class="btn"></app-button>
+            </app-subtit-tit-descp>
+        </div>
+</app-section-with-title>
+<app-section-with-title>
+    <app-subtit-tit-descp [centrat]="true" subtitle="TEAM" title="Our Talents" description="Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,"></app-subtit-tit-descp>
+        <div class="people-cards">
+            <app-people-card *ngFor="let p of peopleService.people" [image]="p.image" [name]="p.name" [function]="p.function" class="people-card"></app-people-card>
+        </div>
+        <app-button button="View Team"></app-button>
+</app-section-with-title>
